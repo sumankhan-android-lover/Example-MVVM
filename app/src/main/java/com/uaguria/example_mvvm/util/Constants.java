@@ -6,4 +6,5 @@ public class Constants {
     public static final String HOME_IMAGE_URL = "/storage/uploads/placeholder-3.jpg";
 
     public static final String ENTRIES = "entries";
+    public static final String NEW_USER = "https://gorest.co.in/public-api/users";
 }

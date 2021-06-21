@@ -30,14 +30,12 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         context = this;
         bindActivity();
-        //getEntriesData();
 
     }
 
     private void bindActivity() {
         viewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
         viewModel.getEntriesMutableLiveData().observe(this, this::setDataOnRecyclerView);
-
 
     }
 
