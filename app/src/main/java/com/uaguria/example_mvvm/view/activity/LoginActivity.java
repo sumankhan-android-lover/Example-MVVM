@@ -57,6 +57,6 @@ public class LoginActivity extends AppCompatActivity {
         } else
             Toast.makeText(this, getString(R.string.enter_email), Toast.LENGTH_SHORT).show();
 
-        return true;
+        return false;
     }
 }
