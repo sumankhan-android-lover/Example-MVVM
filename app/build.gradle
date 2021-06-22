@@ -48,5 +48,5 @@ dependencies {
     //networking library
     implementation 'com.amitshekhar.android:android-networking:1.0.2'
     //life cycle (view model / live data )
-    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
 }

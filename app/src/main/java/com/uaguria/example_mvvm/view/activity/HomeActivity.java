@@ -1,12 +1,11 @@
 package com.uaguria.example_mvvm.view.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
-import androidx.recyclerview.widget.LinearLayoutManager;
-
 import android.content.Context;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.uaguria.example_mvvm.databinding.ActivityHomeBinding;
 import com.uaguria.example_mvvm.model.HomeModel;
@@ -34,7 +33,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void bindActivity() {
-        viewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
+        viewModel = new ViewModelProvider(this).get(HomeViewModel.class);
         viewModel.getEntriesMutableLiveData().observe(this, this::setDataOnRecyclerView);
 
     }

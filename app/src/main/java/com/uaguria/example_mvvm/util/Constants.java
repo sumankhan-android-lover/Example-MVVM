@@ -7,4 +7,7 @@ public class Constants {
 
     public static final String ENTRIES = "entries";
     public static final String NEW_USER = "https://gorest.co.in/public-api/users";
+
+    public static final String DHEUSAGAR_ROOT = "http://uaguriasoftware.com/dheusagar/api/";
+    public static final String DHEUSAGAR_LOGIN = "login";
 }
